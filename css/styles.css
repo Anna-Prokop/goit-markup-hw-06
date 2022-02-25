@@ -244,7 +244,6 @@ h1 {
 
 .backdrop {
   position: fixed;
-
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -264,6 +263,38 @@ h1 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+.button-position {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  fill: #000000;
+  display: flex;
+}
+
+.button-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  bottom: 13px;
+  width: 18px;
+  height: 18px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal-window-title {
@@ -339,12 +370,30 @@ h1 {
   color: #757575;
 }
 
+.statute-container {
+  margin-bottom: 30px;
+}
+
+.statute-style {
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.statute-link-decoration {
+  color: var(--main-color);
+}
+
 .statute-style::before {
   display: inline-block;
   content: "";
   width: 16px;
   height: 16px;
   border: 1px solid #212121;
+  margin-right: 7px;
 }
 
 .input-statute:checked + .statute-style::before {
@@ -352,7 +401,7 @@ h1 {
   border: none;
   background-image: url(../images/Vector.svg);
   background-repeat: no-repeat;
-  margin: auto;
+  background-position: 50% 50%;
 }
 
 .visually-hidden {
@@ -366,6 +415,10 @@ h1 {
   overflow: hidden;
 }
 
+.form-button-container {
+  display: flex;
+}
+
 .form-button {
   height: 50px;
   width: 200px;
@@ -377,38 +430,13 @@ h1 {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  
+  border: none;
+  margin: 0 auto;
 }
 
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-  fill: #000000;
-  display: flex;
-}
-
-.button-icon {
-  align-items: center;
-  height: 18px;
-  width: 18px;
-  margin: auto;
-}
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
 /*====END HERO====*/
 
 /*====section Lorem Ipsum====*/

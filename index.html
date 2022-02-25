@@ -73,13 +73,16 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal-window">
+            <div class="button-position">
             <button type="button" class="close-btn" data-modal-close>
               <svg class="button-icon">
                 <use href="./images/closebutton.svg#icon-closebutton"></use>
               </svg>
             </button>
+            </div>
             <p class="modal-window-title">Zostaw swoje dane w formularzu poniżej</p>
             
+
             <form class="modal-form">
               <label for="username" class="label-style">Imię</label>
               <div class="form-container">
@@ -114,12 +117,13 @@
             
               <div class="statute-container">
                 <input type="checkbox" class="input-statute visually-hidden" name="email" id="statute">
-              <label for="statute" class="statute-style">Oświadczam iż akceptuję <span><a href="">Regulamin</a></span> i <span><a href="">Politykę Prywatności.</a></span></label>
+              <label for="statute" class="statute-style">Oświadczam iż akceptuję <span><a class="statute-link-decoration" href="">Regulamin</a></span> i <span><a class="statute-link-decoration" href="">Politykę Prywatności.</a></span></label>
             </div>
 
-            <button type="submit" class="form-button"> Wyślij
+            <div class="form-button-container"><button type="submit" class="form-button"> Wyślij
             </button>
-            
+            </div>
+
             </form>
           </div>
         </div>
