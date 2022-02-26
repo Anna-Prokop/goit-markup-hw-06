@@ -362,8 +362,16 @@ h1 {
   fill: var(--main-color);
 }
 
-::placeholder {
-  color: #757575;
+.textarea-form::placeholder {
+  position: absolute;
+  color: rgba(117, 117, 117, 0.5);
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  top: 12px;
+  left: 16px;
 }
 
 .statute-container {
@@ -875,7 +883,7 @@ h1 {
   letter-spacing: 0.06em;
 }
 
-.button-icon {
+.button-newsletter-icon {
   position: absolute;
   top: 13px;
   right: 28px;
@@ -884,7 +892,7 @@ h1 {
   height: 24px;
 }
 
-::placeholder {
+.input-newsletter::placeholder {
   position: absolute;
   font-family: var(--main-font);
   font-weight: normal;
