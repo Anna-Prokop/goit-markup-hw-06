@@ -367,6 +367,8 @@ h1 {
   border-radius: 4px;
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 12px;
+  padding-left: 16px;
 }
 
 .input-form:focus,
@@ -871,6 +873,8 @@ h1 {
   margin-right: 12px;
   display: inline-block;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 16px;
+  color: #ffffff;
 }
 
 .input-newsletter:focus {
